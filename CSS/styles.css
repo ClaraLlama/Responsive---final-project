@@ -1,4 +1,25 @@
 /*font-family: 'Pacifico', cursive;
 font-family: 'Poppins', sans-serif;*/
 
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
 
+h1,
+h2,
+h3 {
+  color: rgb(21, 51, 114);
+}
+
+.header {
+  background-color: rgb(213, 255, 239);
+}
+
+.footer {
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
