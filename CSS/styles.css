@@ -1,15 +1,6 @@
 /*font-family: 'Pacifico', cursive;
 font-family: 'Poppins', sans-serif;*/
 
-@media (max-width: 600px) {
-  .grid-text-box {
-    margin-top: 100px;
-  }
-  .picture-box {
-    padding-bottom: 20px;
-  }
-}
-
 :root {
   --primary-color: rgb(21, 51, 114);
   --secondary-color: rgb(221, 255, 242);
@@ -20,7 +11,8 @@ font-family: 'Poppins', sans-serif;*/
 h1,
 h2,
 h3,
-p {
+p,
+h4 {
   text-align: center;
   color: var(--primary-color);
 }
@@ -44,6 +36,12 @@ p {
   opacity: 70%;
 }
 
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 24px;
+}
+
 .header {
   background-color: var(--secondary-color);
   padding-top: 35px;
@@ -56,7 +54,6 @@ p {
 
 .recently-added {
   padding-top: 60px;
-
   font-size: 35px;
 }
 
@@ -70,7 +67,7 @@ p {
 
 .basic-button {
   background: var(--primary-color);
-  color: var(--secondary-color);
+  color: white;
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
@@ -111,4 +108,53 @@ p {
 
 .made-by {
   margin: 15px;
+}
+
+.content {
+  text-align: center;
+}
+
+.about-me-content {
+  border: solid 1px;
+  border-radius: 7px;
+  padding: 20px;
+  border-color: var(--primary-color);
+  margin-top: 35px;
+}
+
+p.about-content {
+  text-align: left;
+}
+
+.picture-of-me {
+  display: block;
+  margin: auto;
+  width: 80%;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.my-work {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 600px) {
+  .grid-text-box {
+    margin-top: 100px;
+  }
+  .picture-box {
+    padding-bottom: 20px;
+  }
+  .about-me-text {
+    text-align: center;
+  }
+  p.about-content {
+    text-align: center;
+  }
+  img.picture-of-me {
+    display: none;
+  }
+  .about-me-content {
+    border: none;
+  }
 }
