@@ -65,6 +65,14 @@ footer .contact-box {
   margin: auto;
 }
 
+.project-text-box {
+  background-color: var(--secondary-color);
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
 .basic-button {
   background: var(--primary-color);
   color: white;
@@ -88,7 +96,8 @@ footer .contact-box {
 }
 
 .picture {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: auto;
   width: 85%;
   border-radius: 7px;
@@ -118,6 +127,7 @@ footer .contact-box {
   border: solid 1px;
   border-radius: 7px;
   padding: 20px;
+
   border-color: var(--primary-color);
   margin-top: 35px;
 }
@@ -133,14 +143,37 @@ p.about-content {
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+.project-image {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 75%;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
 
 .my-work {
   margin-bottom: 0px;
 }
 
+.about-subheading {
+  padding: 15px;
+  font-family: var(--fancy-font-family);
+}
+
+.project-row {
+  margin-top: 75px;
+  margin-bottom: 30px;
+  border: solid 1px;
+  border-radius: 7px;
+  color: var(--primary-color);
+  padding: 25px;
+}
+
 @media (max-width: 600px) {
   .grid-text-box {
-    margin-top: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .picture-box {
     padding-bottom: 20px;
@@ -156,5 +189,22 @@ p.about-content {
   }
   .about-me-content {
     border: none;
+  }
+  .project-image {
+    display: none;
+  }
+  .project-container {
+    margin-top: none;
+  }
+  .project-text-box {
+    background-color: var(--secondary-color);
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+  }
+  .project-row {
+    border: none;
+    margin: 0px;
   }
 }
