@@ -120,7 +120,7 @@ footer .contact-box {
 }
 
 .content {
-  text-align: center;
+  justify-content: center;
 }
 
 .about-me-content {
@@ -168,7 +168,17 @@ p.about-content {
   border-radius: 7px;
   color: var(--primary-color);
   padding: 25px;
+  justify-content: center;
 }
+
+.project-row {
+  align-items: center;
+}
+
+.content-links { text-align: center;}
+
+
+
 
 @media (max-width: 600px) {
   .grid-text-box {
